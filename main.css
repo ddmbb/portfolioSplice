@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 20px;
+    color: #444;
+    text-align: center;
+    line-height: 1.5;
+    background-color: black;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+
+  /*THIS EFFECTS HOW IT LOOKS ON MOBILE
+    WILL NEED INDIVIDUAL WIDTH/HEIGHTS
+    FOR DIFFERENT MEDIA QUERIES*/
+  img{
+    width: 100vw;
+    min-height: 20h;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  nav,
+  footer {
+    padding: 1% 0;
+    background-color: black;
+    color: white;
+  }
+  
+  nav,
+  navbar {
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    text-align: left;
+    display: none;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hero{
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+
+  .scrollDown{
+    height: 20px;
+    background-color: red;
+    color: black;
+    width: 100vw;
+    font-size: 10px;
+  }
+
+  header {
+    font-family: 'Roboto', sans-serif;    
+    font-size: 40px;
+    padding: 0;
+    margin: auto;
+    color: white;
+  }
+  
+  .bio {
+    min-height: 100vh;
+    margin: 0px;
+  }
+
+  section {
+    font-family: 'Roboto', sans-serif;
+    min-height: 200px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color: black;
+    margin: auto;
+    color: white;
+    max-width: 90vw;
+  }
+  
+  .projects{
+      min-height: 100vh;
+      margin: 0px;
+  }
+
+  .container {
+      display: inline;
+      max-width: 50vw;
+      text-align: center;
+      margin: auto;
+      /*padding-top: 100px; */
+      color: black;
+  }
+
+  @media screen and (min-width:480px) {
+    .hamburger {
+      display: none;
+    }
+  
+    .menu {
+      display: none;
+      text-align: center;
+    }
+  }
+
+  @media screen and (min-width:800px) {
+    nav {
+      text-align: right;
+      display: none;
+    }
+
+    .hamburger {
+      display: none;
+    }
+
+    .menu {
+      display: block;
+      text-align: right;
+    }
