@@ -1,5 +1,10 @@
 * {
     box-sizing: border-box;
+    background-color: black;
+  }
+  
+  a {
+    color: white;
   }
   
   body {
@@ -19,7 +24,10 @@
   /*THIS EFFECTS HOW IT LOOKS ON MOBILE
     WILL NEED INDIVIDUAL WIDTH/HEIGHTS
     FOR DIFFERENT MEDIA QUERIES*/
-  img{
+
+  bottomImage,
+  topImage,
+  lastImage {
     width: 100vw;
     min-height: 20h;
     padding: 0px;
@@ -47,6 +55,8 @@
 
   p {
     text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
   }
 
   .menu {
@@ -54,8 +64,9 @@
   }
 
   .hero{
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
-    min-width: 100vw;
   }
 
   .scrollDown{
@@ -74,9 +85,18 @@
     color: white;
   }
   
+  .growContainer {
+    flex-grow: 1;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+  }
+
   .bio {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
-    margin: 0px;
+    margin-bottom: 0px;
   }
 
   section {
@@ -87,17 +107,26 @@
     background-color: black;
     margin: auto;
     color: white;
-    max-width: 90vw;
   }
   
   .projects{
       min-height: 100vh;
       margin: 0px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .projectImage{
+    max-width: 100%;
+  }
+
+  .projectName {
+    margin-top: 0px;
   }
 
   .container {
       display: inline;
-      max-width: 50vw;
+      /*max-width: 50vw;*/
       text-align: center;
       margin: auto;
       /*padding-top: 100px; */
